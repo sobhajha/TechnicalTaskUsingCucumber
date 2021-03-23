@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests" verbose="3" parallel="tests">
+	<parameter name="screenshotStoreFolder" value="screenshots" />
+	<test name="demotestTime">
+		<parameter name="os" value="MAC" />
+	    <parameter name="platform" value="chrome" /> 
+	    <parameter name="driverPath"
+		value="drivers/ChromeDriver/chromedriver" />
+		<parameter name="testTarget" value="https://www.seleniumeasy.com/test/" />
+		 <parameter name="emailAdd" value="sobha.jha@gmail.com" /> 
+		 <parameter name="password" value="Burningglass" /> 
+		
+		<classes>
+			<class name="com.burning.glass.selenium.web.demotest.DemoTest1" />
+		</classes>
+	</test>
+</suite>

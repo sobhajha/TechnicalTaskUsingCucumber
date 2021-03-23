@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Tests]" guice-stage="DEVELOPMENT" verbose="3">
+  <parameter name="screenshotStoreFolder" value="screenshots"/>
+  <parameter name="password" value="Burningglass"/>
+  <parameter name="os" value="MAC"/>
+  <parameter name="driverPath" value="drivers/ChromeDriver/chromedriver"/>
+  <parameter name="testTarget" value="https://www.seleniumeasy.com/test/"/>
+  <parameter name="emailAdd" value="sobha.jha@gmail.com"/>
+  <parameter name="platform" value="chrome"/>
+  <test name="demotestTime">
+    <parameter name="password" value="Burningglass"/>
+    <parameter name="os" value="MAC"/>
+    <parameter name="driverPath" value="drivers/ChromeDriver/chromedriver"/>
+    <parameter name="testTarget" value="https://www.seleniumeasy.com/test/"/>
+    <parameter name="emailAdd" value="sobha.jha@gmail.com"/>
+    <parameter name="platform" value="chrome"/>
+    <classes>
+      <class name="com.burning.glass.selenium.web.demotest.DemoTest1"/>
+    </classes>
+  </test> <!-- demotestTime -->
+</suite> <!-- Failed suite [Tests] -->
